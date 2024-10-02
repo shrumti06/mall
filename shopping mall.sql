@@ -527,18 +527,18 @@ select to_number('$234.432','L9999.999');
                        -----create user statement creat a database
 					   --that allows you to lig in the database--
 
-create user kirtan with password 'Kirtan';
+create user shruti with password 'password';
 create user ritin with password 'Ritin' valid until 'infinity';
 
-grant SELECT,INSERT,UPDATE ON product to kirtan;
+grant SELECT,INSERT,UPDATE ON product to shruti;
 
-revoke delete on product from kirtan;
+revoke delete on product from shruti;
 
-revoke all on product from kirtan;
-drop user kirtan;
+revoke all on product from shruti;
+drop user shruti;
 
 --rename
-alter kirtan renmae to mayuri;
+alter shruti renmae to mayuri;
 --info of user
 select * from pg_user;
 --logied in user
